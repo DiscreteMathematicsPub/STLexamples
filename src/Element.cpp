@@ -18,7 +18,7 @@ Element::Element(string n, double v) {
 
 
 Element::Element() {
-	name = "";
+	name = "default";
 	value = new double(0);
 	std::cout << "default constructor " << name << endl;
 }

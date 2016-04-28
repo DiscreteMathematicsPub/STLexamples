@@ -28,7 +28,7 @@ int main() {
 
 	//elementPointerPriorityQueueExample ();
 
-	//elementPointerUnorderedMapExample ();
+	elementPointerUnorderedMapExample ();
 
 	return 0;
 }

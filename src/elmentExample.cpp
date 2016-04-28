@@ -16,7 +16,7 @@ void elementExample () {
 	 * Element: copy constructor, operator <<, operator =
 	 *************************************************************/
 	Element a("name A", 9.0);
-	Element b = a;  // calls operator =
+	Element b = a;  // calls copy constructor
 	Element c; // calls default constructor
 	Element &d = a; //it just copies the reference
 
