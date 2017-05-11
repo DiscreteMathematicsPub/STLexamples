@@ -23,7 +23,7 @@ void printListNoReference (const list<T> &l) {
 void elementListExample () {
 
 	/*******************************************************
-	 *  List of elements. All objects in a list are going to be copied and thus should be copiable
+	 *  List of elements. All objects in a list are going to be copied and thus should be copyable
 	 ******************************************************/
 	Element a("name A", 9.0);
 
@@ -34,9 +34,8 @@ void elementListExample () {
 	printListReference(le);
 
 	cout << endl << endl;
-
 	printListNoReference(le);
 
-	cout << "adeu" << endl << endl;
+	cout << "bye bye" << endl << endl;
 
 }

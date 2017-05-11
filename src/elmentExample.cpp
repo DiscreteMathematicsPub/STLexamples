@@ -19,21 +19,24 @@ void elementExample () {
 	Element b = a;  // calls copy constructor
 	Element c; // calls default constructor
 	Element &d = a; //it just copies the reference
+	Element *e = new Element("name E", 9.0);  // we must explicitly delete this object before the program ends
 
 	cout << endl;
 	cout << "Just declared. A: " << a << ", B: " << b << ", C: " << c << ", D: " << d << endl;
 
-	c = a; // Does NOT call copy constructor, calls assigment operator
+	c = a; // Does NOT call copy constructor, calls the assignment operator
 
 	cout << "After c = a    A: " << a << ", B: " << b << ", C: " << c << endl;
 
 	printScreenObject(a); 		// calls copy constructor
+	cout << endl;
 	printScreenReference(a); 	// does NOT call copy constructor
 	cout << endl << endl;
 
 
-	cout << "adeu" << endl << endl;
+	cout << "bye bye" << endl << endl;
 
+	//delete e;   //uncomment this line to avoid this memory leak
 }
 
 

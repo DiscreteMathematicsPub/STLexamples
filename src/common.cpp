@@ -12,12 +12,12 @@ using namespace std;
 
 
 void printScreenObject(Element e) {
-	cout << "Print screen object  ";
+	cout << "Print screen object:  ";
 	cout << e.getName() << endl;
 }
 
 void printScreenReference(Element &e) {
-	cout << "Print screen reference  ";
+	cout << "Print screen reference:  ";
 	cout << e.getName() << endl;
 }
 

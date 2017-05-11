@@ -21,7 +21,7 @@ void integerListExample () {
 	list<int> l = {1,2,3,4,5,6};
 	l.push_back(7);
 
-	cout << "Before:  ";
+	cout << "Before increment:  ";
 	printList (l);
 
 	//The iterator copies the element list
@@ -29,7 +29,7 @@ void integerListExample () {
 		elem ++;
 	}
 	// observe that the list elements are NOT modified since the loop modifies the copy of the list element (not the element in the list)
-	cout << "After:   ";
+	cout << "After increment:   ";
 	printList(l);
 
 
@@ -38,7 +38,7 @@ void integerListExample () {
 		elem ++;
 	}
 	//Observe that the list elements are modified since the loop modifies the referenced element (the one in the list)
-	cout << "After &: ";
+	cout << "After increment &: ";
 	printList(l);
 
 	cout << endl << endl;

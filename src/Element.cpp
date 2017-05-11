@@ -13,14 +13,14 @@ Element::Element(string n, double v) {
 	name = n;
 	value = new double;
 	*value = v;
-	std::cout << "two parameter constructor " << name << endl;
+	std::cout << "two parameter constructor: " << name << endl;
 }
 
 
 Element::Element() {
 	name = "default";
 	value = new double(0);
-	std::cout << "default constructor " << name << endl;
+	std::cout << "default constructor: " << name << endl;
 }
 
 
@@ -28,12 +28,12 @@ Element::Element(const Element & e) { //copy constructor
 	name = "Copied " + e.name;
 	value = new double;
 	*value = *e.value;
-	std::cout << "copy constructor " << name << std::endl;
+	std::cout << "copy constructor: " << name << std::endl;
 }
 
 
 Element::~Element() {
-	std::cout << "Freeing value " << name << std::endl;
+	std::cout << "Freeing value: " << name << std::endl;
 	delete value;
 }
 
@@ -55,7 +55,7 @@ Element & Element::operator=(Element const &e) {
 		delete value;
 		value = new double;
 		*value = *e.value;
-		name = "Assigment " + e.name;
+		name = "Assigment: " + e.name;
 	}
 
 	return *this;
